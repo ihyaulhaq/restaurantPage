@@ -1,0 +1,174 @@
+/* 
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+
+    height: 100%;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*----------------------------------------------- */
+
+body {
+  background-color: aliceblue;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.img-container {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container img {
+  width: 90%;
+  height: 700px;
+  object-fit: cover;
+}
+
+.content > h1 {
+  padding: 0px 120px;
+}
+.content > p {
+  padding: 0px 120px;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: rgb(49, 49, 49);
+  padding-bottom: 20vh;
+}
+
+header > nav {
+  display: flex;
+  justify-content: center;
+}
+
+header > nav > button {
+  margin: 0px 20px;
+  margin-top: 40px;
+
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(77, 149, 121);
+  height: 40px;
+  width: 100px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+header > nav > button:active {
+  background-color: rgb(51, 99, 80);
+}
+
+.main-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+}
+
+.intro-section {
+  margin-bottom: 2.5rem; /* mb-10 */
+}
+
+.intro-section h2 {
+  font-size: 2.25rem; /* text-4xl */
+  font-weight: 400; /* font-extrabold */
+  color: #000;
+  margin-bottom: 1.5rem; /* mb-6 */
+  text-align: center;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* gap-8 */
+  justify-items: center;
+}
+
+.intro-grid div > p {
+  margin-right: 200px;
+}
+
+.intro-grid img {
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.intro-grid p {
+  font-size: 1.125rem; /* text-lg */
+  line-height: 1.75rem; /* leading-relaxed */
+  color: #374151;
+  margin-bottom: 1rem; /* mb-4 */
+}
